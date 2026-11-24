@@ -777,9 +777,7 @@ function Order(main) {
         </div>`).join('')}
       </div>`,
     () => `<div class="tab-panel" style="display:flex;flex-direction:column;gap:16px">
-        <div class="card fields">${fieldList(DETAILS)}
-          <div class="sub-h">Регулярный платёж <button data-toast="Меню регулярного платежа">${ic('more', 20)}</button></div>${fieldList(REGULAR)}
-        </div>
+        <div class="card fields">${fieldList(DETAILS)}</div>
         <div class="card fields"><div class="sub-h">Регулярный платёж <button data-toast="Меню регулярного платежа">${ic('more', 20)}</button></div>${fieldList(REGULAR)}</div>
       </div>`,
     () => `<div class="card ops tab-panel">
