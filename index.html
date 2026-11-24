@@ -354,7 +354,7 @@ const ic = (name, size = 20, sw) => {
   if (ICONS[name]) return `<span class="ic" style="display:inline-flex">${ICONS[name].replace(/width="[\d.]+" height="[\d.]+"/, `width="${size}" height="${size}"`)}</span>`;
   return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${sw || (size <= 16 ? 1.6 : 1.8)}" stroke-linecap="round" stroke-linejoin="round">${L[name]}</svg>`;
 };
-const SBP = `<svg width="14" height="14" viewBox="0 0 14 14"><path d="M1 1.2 3.3 5.3v2.4L1 11.8Z" fill="#5B57A2"/><path d="m5.6 4 2-3.6 4.9 0-6.9 4.2Z" fill="#D90751"/><path d="M5.6 4 3.3 5.3l.1 2.4 8.9-6.4Z" fill="#FAB718"/><path d="m3.4 7.7 2.2 1.4 6.9 3.6-6.9.1-2.2-3.7Z" fill="#0F9F49"/><path d="m5.6 9.1 6.9-1.5v5.1Z" fill="#1E97D4" opacity=".85"/></svg>`;
+const SBP = `<svg width="14" height="14" viewBox="66 34 400 444" aria-label="СБП"><path d="M82 135 134 224V288L82 378Z" fill="#5B5B9A"/><path d="M82 378 134 288 205 248 240 268V288Z" fill="#844A92"/><path d="M240 43 292 132V256L240 228Z" fill="#FBB12B"/><path d="M240 43 450 163H347L292 132Z" fill="#F18419"/><path d="M450 163 292 256V193L347 163Z" fill="#DB1844"/><path d="M240 286 292 316V380L240 468Z" fill="#78B32C"/><path d="M240 468 292 380 347 348H450Z" fill="#00753F"/><path d="M82 135 450 348H347L134 224Z" fill="#0F92D0"/></svg>`;
 
 /* ---------- helpers ---------- */
 const $ = (s, r = document) => r.querySelector(s);
