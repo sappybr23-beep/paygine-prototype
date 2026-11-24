@@ -35,7 +35,8 @@ body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--
 button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
 input, select { font: inherit; color: inherit; }
 svg { display: block; flex-shrink: 0; }
-.num { font-variant-numeric: tabular-nums; }
+/* Цифры везде пропорциональные — плотные, как в макете */
+body, input, select, button, .num { font-variant-numeric: proportional-nums; font-feature-settings: "tnum" 0, "pnum" 1; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
 
 /* Прототип — только десктоп: горизонтальный скролл внутри обёртки, а не у body */
@@ -245,7 +246,7 @@ h1 sup { font-size: 14px; font-weight: 400; color: var(--text-2); vertical-align
 .inp { height: 56px; border-radius: 12px; background: var(--field); border: 0; padding: 0 14px; font-size: 14px; width: 100%; outline: none; transition: box-shadow .2s, background .2s; }
 .inp::placeholder { color: #8a8a90; font-size: 13px; }
 .inp:focus { box-shadow: 0 0 0 2px var(--accent) inset; background: #fff; }
-.inp.huge { height: 72px; font-size: 28px; font-weight: 500; }
+.inp.huge { height: 72px; font-size: 28px; font-weight: 500; letter-spacing: -.56px; }
 .inp.huge::placeholder { font-size: 28px; color: #8a8a90; font-weight: 400; }
 .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .toggle-card { display: flex; align-items: center; gap: 12px; padding: 13px 13px 13px 13px; }
